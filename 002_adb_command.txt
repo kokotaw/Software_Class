@@ -1,1 +1,44 @@
+adb devices => device ချိတ်ဆက်မှု စစ်သော Command
+‌adb device -l ( list ) => Device Info ကိုပြသပေးသော Command
+adb reboot => Phone ကို restart ( reboot )
+adb reboot recovery => Phone ကို Normal mode မှ recovery mode သို‌  ဝင်ရောက်သော Command
+adb reboot bootloader => Phone ကို Normal mode မှ fastboot mode သို‌  ဝင်ရောက်သော Command ( fastboot = bootloader )
+adb shell getprop => Phone Properties များကြည့်သော Command
+adb shell getprop ro.product.model  => Phone model ကြည့်သော Command
+adb shell getprop ro.product.name  => Phone product name ကြည့်သော Command
+adb shell getprop ro.build.version.release  => Android Version ကြည့်သော Command
+adb shell su => Root Check Command ( Root ရှိ ရင် # ) ( Root မရှိရင် not Found )
+adb push 1.txt /sdcard/    ( ဖုန်းထဲသို Data ကူးထည့် )
+adb pull /sdcard/1.txt      ( ဖုန်းထဲမှ Data အား Pc သို ကူးထည့် )
+adb shell screencap -p /sdcard/screenshot.png
+adb shell screenrecord --time-limit=10 /sdcard/record.mp4
+adb pull /sdcard/record.mp4
+adb shell dumpsys battery  ( Phone Battery Info )
+adb shell 
+ls ( list ကြည့် )
+cd ( Change Directory )
 
+
+
+adb shell getprop ro.product.manufacturer 
+
+adb shell getprop ro.product.model 
+
+adb shell getprop ro.build.version.release
+
+adb shell getprop ro.build.version.incremental
+
+adb shell getprop ro.boot.hardware 
+
+adb shell getprop ro.product.name 
+
+adb shell getprop ro.product.cpu.abi  
+(  Architectures ) 
+
+adb shell getprop ro.ril.miui.imei0    
+
+adb shell getprop ro.ril.miui.imei1   
+
+adb shell getprop ro.board.platform
+
+adb shell getprop ro.build.display.id
