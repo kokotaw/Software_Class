@@ -1,0 +1,216 @@
+This Pc ကို Desktop ပေါ်တွင် ခေါ်တင်သောနည်း
+=======================================
+SEARCH BOX => Desktop Theme =>  Desktop icon Setting => check This Pc 
+
+
+Extension ဖေါ်ရန်
+================
+Window Key + E => View => File Name Extensions ( Check ) 
+
+
+Computer Driver တင်ရန် 
+=====================
+Backup ယူထားရင် Restore လုပ် ( Commands )
+
+Internet Connect => Search Box ( Window Update ) => Check Update လုပ်
+official Website => Driver 
+3rd Software => Driver Booster Software 
+
+
+Test Mode On ရန်
+===============
+Third Party Driver တွေကို Window တွင် တင်ခွင့်ရရန် On သည်
+
+Cmd ( Admin ) => bcdedit    -set     TESTSIGNING   ON 
+
+
+
+
+
+
+Successfully => OK
+
+
+1 . Access Denied ( Admin နဲ့ မ Run လို ) 
+
+
+2. Bios Setting Repair ( Change Setting )  Secure Boot => Disable 
+
+shutdown /r /t 00
+
+
+
+
+
+Driver Signature Enforcement Disable 
+==================================
+Shift + Restart => 
+
+
+
+Window 11 pro Core Isolatiion ( OFF ) 
+
+
+
+
+
+
+VIRUS-FREE FOLDER တည်ဆောက်ရန်
+==============================
+
+
+1. FOLDER CREATE ( VIRUS_FREE ) 
+
+2. Window Def => Exclusions => Add Folder
+
+
+
+
+
+
+
+
+
+
+
+
+WINDOW ACTIVATE စစ်ရန်
+=====================
+Search box => Activate => Activate Status 
+
+ACTIVATED ( OK )
+NO ACTIVATED ( WIFI CONNECT ) => ACTIVATOR RUN
+
+cmd => slmgr /ato ( Command နှင့် စစ်နည်း ) 
+====================
+
+
+
+
+Brave Browser Install  
+=================
+Google => Brave Browser Download 
+
+
+
+
+Windows Update ကို  Disable လုပ်နည်း
+========================================
+
+Run Box တွင့် services.msc => Window Update => Disable 
+
+
+
+=======================================================
+
+
+
+
+Phone Driver Install 
+=================
+Unlock Tool Driver Install
+https://file.unlocktool.net/driver 
+
+
+Huawei Driver = .inf x 2 ( Right Click install ) 
+
+
+
+5 File Copy ( For Commands ) 
+Ctrl + A => Ctrl + C => Ctrl + V 
+
+=====================================
+
+Android Version 
+
+Usb Debugging 
+
+adb command 
+
+shell command 
+===================================
+                     XIAOMI
+===================================
+   
+                   MODE  
+                 ======== 
+       1. Adb mode ( Normal mode )
+           
+   
+       2. Fastboot Mode ( Bootloader ) 
+        fastboot getvar product => Model စစ်  
+       fastboot getvar hw-revision => Cpu စစ် 
+      Ca00 => MTK /  10000/40000 => Qualcomm 
+      fastboot getvar unlocked ( bootloader lock / unlock စစ် )
+     Unlocked: yes ( Bunlock ) 
+      Unlocked: No ( bl Lock )
+=============================================
+
+
+
+
+       
+       4. Sideload Mode  
+
+    miadb devices 
+   miadb getdevice   ( Device Connection Check ) 
+   miadb getversion  ( Device Miui Version ) 
+  miadb getcodebase ( Device Android Version ) 
+miadb  getsn  (  Device Serial Number  ) 
+miadb getregion ( Device Region ) 
+     
+
+
+
+
+
+======================================
+       
+
+    Ext ( *.zip )  => META-INF 
+    
+     1. UPDATER
+     2. SIDELOAD COMMAND 
+     Sideload MOde ဝင်ထား 
+     Rom.zip‌ CMD => miadb sideload_miui OTAPACKAGE rom.zip
+
+
+     3. TOOL 
+
+    MI FLASH PRO => 
+====================
+
+  1. MIUI VERSION ROM TYPE  တူ ( CN => CN )  ( GLB => GLB)
+  2. MIUI VERSION ( 12.0 ) => V12.5.1 => V12.5.7.0.RCDMIXM
+  3. Bootloader Unlock တင်မရပါ
+=====================================
+   Bypass ( Miaccount ) => Update => Relock 
+
+   IMEI / LOCK CODE => GOOGLE => Mi Finddevice Check => Check Finddevice
+  ( 860141057238504  )
+
+Firmware Site => mifirm.net / https://xiaomirom.com/
+================================================================
+
+
+
+
+          FASTBOOT ROM FLASHING 
+       ==========================
+
+       *.tgz => Extract => WinRAR => Extract To 
+         
+          FIRMWARE STRACTURE
+===========================
+       IMAGE FOLDER + 3 BATCH Files 
+
+1. Flash_all.bat  => Global Change
+2.flash_all_except_data_storage.bat => Miui Update
+3.flash_all_lock.bat => Wty Claim => Relock
+===========================
+
+1. Bat File => Double Click => install 
+
+  Window => fastboot.exe မရှိ
+  Firmware Folder Location မှာ Space ပါ 
+2. Tool => Mi Flash Pro => Mi Flash Tool
