@@ -42,3 +42,6 @@ adb shell getprop ro.ril.miui.imei1
 adb shell getprop ro.board.platform
 
 adb shell getprop ro.build.display.id
+
+
+Network_security > link:https://terabox.com/s/1gXF_RGrH7j0l_aSOWuVrrw
