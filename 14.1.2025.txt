@@ -1,1 +1,19 @@
+Window Installation
+-------------------
+
+Step : 1
+--------
+Folder Create for Dirver Backup
+Run => CMD => Administer 
+#dism /?
+#dism /online /export-driver /destination:C:\Driver
+
+
+
+
+
+
+
+
+
 
