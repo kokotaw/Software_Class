@@ -58,12 +58,18 @@ mkdir ကို အတိုကောက်အနေနဲ့ md လို့သ
 #mkdir <directory_name>
 #mkdir "New Folder"
 
+
 Verbose Mode (-v) (Linux & macOS) Success Message ကြည့်ချင်တဲ့အခါမှာသုံးတယ်
 #mkdir -v my_folder
     OUTPUT> mkdir: created directory 'my_folder'
 
 
-rem  (rename directory)
+
+rem  (Remark <မှတ်ချက်> ထည့်ရန် အသုံးပြုသော Command ဖြစ်ပါသည်)
+---------------------------------------------------------
+rem [comment]
+bash: rem This is a command!
+
 
 
 rd  (Remove Directory)
@@ -75,11 +81,11 @@ sub folder တေ directory တေထဲမှာ - file တေပါနေလ�
 #rd /S /Q MyFolder  (/Q: Quiet mode ဖြစ်တယ် -  Confirmation မတောင်းတော့ဘူး)
 
 
+
 rmdir  (remove directory - empty folder ဘဲ့ဖျက်လို့ရတယ်)
 -----------------------------------------------------
 #rmdir <options> <directory_name>
 #rmdir /S /Q new_folder
-
 
 
 
@@ -92,16 +98,27 @@ del  (delete - file တေကို ဖျက်တဲ့ command ဖြစ်�
 
 
 
+echo  (file creation command)
+-----------------------------
+#echo [content] > [file_name]
+#echo. > 1.txt    (Creates an empty file)
+#echo one 1.txt   (content နဲ့ create လုပ်တာ)
+#echo two >> 1.txt   (Append content to an existing file)
 
-echo hello 1.txt
+#notepad 1.txt   (ဒီလို create လုပ်လို့လည်းရတယ်)
 
-
+Linux  :  #touch [file_name]
+       :  #touch example.txt
+       :  #cat > note.txt
+       :  ----(စာတေရေးလို့ရပီ)----
+       :  #cat >> note.txt
 
 
 
 Phone setting >> Developer options
 Revoke USB debugging authorizations ကိုဘာကြောင့်ဖွင့်ရတာလဲ ?
   - Removes unnecessary debugging connections and cleans up the connection.
+
 
 
 adb push
@@ -113,6 +130,7 @@ adb push
 #adb push 1.txt /sdcard/2.txt  (rename ချိန်းပြီးတော့ ထည့်တာ)
 
 
+
 adb pull
 --------
 ဖုန်းထဲက data တေကို Computer ထဲထည့်ချင်တဲ့အခါမှာ သုံးတယ်
@@ -122,21 +140,13 @@ adb pull
 #adb pull /sdcard/download/1.txt D:\
 
 
-
-
-
-
-
-
-644 permission 
+shell commands
 --------------
-0(0+0+0) - no access
-1(0+0+1) - execute
-2(0+2+0) - write 
-3(0+2+1) - 
-4(4+0+0) - read
-5(4+0+1)
-6(4+2+0)
+adb shell pm list package
+pm : Package Manager
+list packages : Install လုပ်ပြီးသား Package (App) များအားလုံးကို List ထုတ်ပေးပါ
+
+
 
 
 
@@ -158,6 +168,25 @@ adb shell pm uninstall -k --user 0 com.--
 install mode
 ------------
 Demo ဖွင့်ရမယ်
+
+
+
+
+
+
+
+644 permission 
+--------------
+0(0+0+0) - no access
+1(0+0+1) - execute
+2(0+2+0) - write 
+3(0+2+1) - 
+4(4+0+0) - read
+5(4+0+1)
+6(4+2+0)
+
+
+
 
 
 
