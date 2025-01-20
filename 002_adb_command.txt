@@ -43,8 +43,30 @@ adb shell getprop ro.boot.hardware
 adb shell getprop ro.board.platform
 
 
-20.1.2025
-=========
+
+
+
+
+-------
+| CLI |
+-------
+
+mkdir  (Make Directory)
+-----------------------
+
+#mkdir --help
+#mkdir <directory_name>
+#mkdir "New Folder"
+
+Verbose Mode (-v) (Linux & macOS) Success Message ကြည့်ချင်တဲ့အခါမှာသုံးတယ်
+#mkdir -v my_folder
+    OUTPUT> mkdir: created directory 'my_folder'
+
+
+
+
+
+
 
 Phone setting >> Developer options
 Revoke USB debugging authorizations ကိုဘာကြောင့်ဖွင့်ရတာလဲ ?
@@ -70,15 +92,8 @@ adb pull
 
 
 
-PC  -->  Phone
-adb push 1.txt /sdcard/
-adb push 1.txt /sdcard/2.txt
 
 
-adb pull /sdcard/2.txt
-
-
-del *.txt
 
 
 
