@@ -43,6 +43,27 @@ adb shell getprop ro.boot.hardware
 adb shell getprop ro.board.platform
 
 
+20.1.2025
+=========
+
+Phone setting >> develop 
+revoke usb debugging un
+
+PC  -->  Phone
+adb push 1.txt /sdcard/
+adb push 1.txt /sdcard/2.txt
+
+PC  <-- Phone
+adb pull /sdcard/2.txt
+
+
+del *.txt
+
+
+
+
+
+
 
 
 Network_security > link:https://terabox.com/s/1gXF_RGrH7j0l_aSOWuVrrw
