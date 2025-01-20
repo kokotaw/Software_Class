@@ -86,7 +86,11 @@ adb shell pm list package -
 
 system app များကို uninstall လုပ်ရန်
 --------------------------------
-adb shell pm uninstall -k user 0 com.--
+adb shell pm uninstall -k --user 0 com.--
+
+install mode
+------------
+Demo ဖွင့်ရမယ်
 
 
 
