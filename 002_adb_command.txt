@@ -73,5 +73,17 @@ del *.txt
 
 
 
+shell commands
+--------------
+packages
+
+adb shell pm list package -
+
+-s 
+-3 third party app
+-d
+
+
+
 
 Network_security > link:https://terabox.com/s/1gXF_RGrH7j0l_aSOWuVrrw
