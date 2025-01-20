@@ -53,7 +53,7 @@ adb shell getprop ro.board.platform
 
 mkdir  (Make Directory)
 -----------------------
-
+mkdir ကို အတိုကောက်အနေနဲ့ md လို့သုံးလည်းရတယ်
 #mkdir --help
 #mkdir <directory_name>
 #mkdir "New Folder"
@@ -63,6 +63,37 @@ Verbose Mode (-v) (Linux & macOS) Success Message ကြည့်ချင်တ
     OUTPUT> mkdir: created directory 'my_folder'
 
 
+rem  (rename directory)
+
+
+rd  (Remove Directory)
+----------------------
+sub folder တေ directory တေထဲမှာ - file တေပါနေလျှင် ဖျက်လို့မရဘူး
+#rd <options> <directory_name>
+#rd /S MyFolder   (/S: Subfolders နှင့် Files အားလုံးကို ဖျက်မှာ)
+#rd MyFolder /S
+#rd /S /Q MyFolder  (/Q: Quiet mode ဖြစ်တယ် -  Confirmation မတောင်းတော့ဘူး)
+
+
+rmdir  (remove directory - empty folder ဘဲ့ဖျက်လို့ရတယ်)
+-----------------------------------------------------
+#rmdir <options> <directory_name>
+#rmdir /S /Q new_folder
+
+
+
+
+del  (delete - file တေကို ဖျက်တဲ့ command ဖြစ်တယ်)
+-----------------------------------------------
+#del <options> <file_path>
+#del 1.txt
+#del /Q example.txt    (/Q: Quiet mode ဖြစ်တယ် -  Confirmation မတောင်းတော့ဘူး)
+#del /S C:\MyFolder\*.log    (/S: Subfolders နှင့် Files အားလုံးကို ဖျက်မှာ)
+
+
+
+
+echo hello 1.txt
 
 
 
