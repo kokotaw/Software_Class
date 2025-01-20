@@ -46,14 +46,35 @@ adb shell getprop ro.board.platform
 20.1.2025
 =========
 
-Phone setting >> develop 
-revoke usb debugging un
+Phone setting >> Developer options
+Revoke USB debugging authorizations ကိုဘာကြောင့်ဖွင့်ရတာလဲ ?
+  - Removes unnecessary debugging connections and cleans up the connection.
+
+
+adb push
+--------
+ဖုန်းထဲကို data တေပို့ချင်တဲ့အချိန်မှာ adb push - command ကိုသုံးတယ်
+#adb push <source> <destination>
+#adb push 1.txt /sdcard/Download/
+        <OR>
+#adb push 1.txt /sdcard/2.txt  (rename ချိန်းပြီးတော့ ထည့်တာ)
+
+
+adb pull
+--------
+ဖုန်းထဲက data တေကို Computer ထဲထည့်ချင်တဲ့အခါမှာ သုံးတယ်
+‌#adb pull <source> <destination>
+#adb pull /sdcard/2.txt
+        <OR>
+#adb pull /sdcard/download/1.txt D:\
+
+
 
 PC  -->  Phone
 adb push 1.txt /sdcard/
 adb push 1.txt /sdcard/2.txt
 
-PC  <-- Phone
+
 adb pull /sdcard/2.txt
 
 
