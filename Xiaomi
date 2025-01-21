@@ -68,10 +68,43 @@ MIUI Update Types
 
 
 
+Region Code
+===========
+MI = Global
+CN = China
+RU = Russia
+EU = Europe
+IN = India
+ID = Indonesia
+TR = Turkey
+TW = Taiwan
+JP = Japan
 
 
-Region ROM
-==========
+
+Firmware ကိုဘယ်လို‌ရွေးမှာလဲ ?
+=========================
+
+1. ADB
+------
+   - Model Code
+        #adb shell getprop ro.product.model
+   - MIUI Version
+        #adh shell getprop ro.build.version.incremental
+   - Bootloader Lock <OR> Unlock ?
+        #adb reboot bootloader
+        :OUTPUT> FASTBOOT MODE ထဲ‌ရောက်သွားလိမ့်မယ်
+
+2. Fastboot
+-----------
+   - Bootloader Lock <OR> Unlock
+        #adb reboot bootloader
+
+3. Sideload
+ဖုန်းရဲ့ IMEI / Serial number တေကို google မှာရှာပီးတော့ စစ်လို့ရတယ်
+
+
+
 
 
 
