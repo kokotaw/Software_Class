@@ -88,19 +88,75 @@ Firmware ကိုဘယ်လို‌ရွေးမှာလဲ ?
 1. ADB
 ------
    - Model Code
-        #adb shell getprop ro.product.model
+      #adb shell getprop ro.product.model
    - MIUI Version
-        #adh shell getprop ro.build.version.incremental
+      #adh shell getprop ro.build.version.incremental
    - Bootloader Lock <OR> Unlock ?
-        #adb reboot bootloader
+      #adb reboot bootloader
         :OUTPUT> FASTBOOT MODE ထဲ‌ရောက်သွားလိမ့်မယ်
 
 2. Fastboot
 -----------
+Fastboot Mode ကို [Vol_down + Power Key] တွဲနှိပ်၍သော်လည်းကောင်း 'adb reboot bootloader' command ဖြင့်သော်လည်းကောင်း ဝင်နိုင်သည်။
+Fastboot Mode ကို အဓိကအားဖြင့် -> Firmware Install လုပ်ခြင့် နှင့် Phone ၏ Properties တေကို စစ်ဆေးဖို့အတွက်သုံးပြုတယ်
+Fastboot Mode မှာ fastboot command တေဘဲ့ရိုက်လို့ရမှာ ဖြစ်တယ်
+e.g =>  #fastboot devices   (device ချိတ်ဆက်မှုရှိမရှိစစ်ဆေးခြင်း)
+        #fastboot getvar all   (partition တွေကိုစစ်ဆေးခြင်း)
+        #fastboot getvar hw-revision   (CPU စစ်တာ)
+        :OUTPUT> 10000/20000  =>  Qualcomm
+        :OUTPUT>    ca00      =>  MTK
+
    - Bootloader Lock <OR> Unlock
-        #adb reboot bootloader
+   -----------------------------
+      #fastboot getvar unlocked
+                <OR>
+      #fastboot oem device-info
+
+   - Slot Count
+   ------------
+      #fastboot getvar slot-count
+          <slot=A/B>
+      #fastboot getvar current-slot
+
+   - Slot Change
+   -------------
+      #fastboot set-active
+      #fastboot --set-active=A
+
+   - Flash Partition
+   -----------------
+      #fastboot flash partition name file name
+
+   - Erase Partition
+   -----------------
+      #fastboot erase partition name
+
+   - Factory Reset
+   ---------------
+      #fastboot -w
+
+   - Rom Install
+   -------------
+    bat file run ရန်
+
+
 
 3. Sideload
+-----------
+Recovery Mode ကို [Vol_up + Power_Key] တွဲနှိပ်၍သော်လည်းကောင်း
+'adb reboot recovery' command ကိုသုံး၍သော်လည်းကောင်း ဝင်နိုင်တယ်
+Sideload mode ကို အဓိကအားဖြင့် xiaomi ဖုန်းများတွင် တွေ့ရပြီး / တခြားဖုန်းများတွင် Recovery mode အနေနဲ့တွေ့ရတတ်တယ်
+#miadb getcodebase
+#miadb getversion
+#miadb getdevice
+#miadb getsn
+#miadb sideload_miui OTAPACKAGE(rom.zip)
+
+
+
+
+
+
 ဖုန်းရဲ့ IMEI / Serial number တေကို google မှာရှာပီးတော့ စစ်လို့ရတယ်
 
 
