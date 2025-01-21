@@ -5,17 +5,81 @@ Xiaomi MIUI Version Types
 ----------------------
    - Google Services (Google Play Store) တေပါတယ်
    - Multi-language Support ပေးတယ်
+   - Stability ဖြစ်တယ်
 
 2. MIUI China Version
 ---------------------
    - တရုတ်နိုင်ငံအတွင်း သီးသန့်ထုတ်လုပ်ထားသော Version ဖြစ်သည်
-   - Google Services မပါဝင်ဘဲ
+   - Google Services မပါပါ
    - တရုတ်သုံး Applications နှင့် Services တေပါတယ်
    - Update ပေးတာလည်း မြန်တယ်
 
 3. MIUI Beta Version
 --------------------
-   -
+   - Xiaomi Developer Team မှ အသစ်ထုတ်ထားသော Feature များ စမ်းသပ်ရန် ရည်ရွယ်သည်
+   - Advanced Users သို့မဟုတ် Bug Tester များအတွက်ဖြစ်သည်
+   - Stability မရှိသေးသဖြင့် Error များ ဖြစ်နိုင်သည်
+   - Advanced Testers
+Bug Tester ဆိုတာဘာလဲ ?
+  Software Development လုပ်ငန်းစဉ်အတွင်းတွင် Error (Bug) များကို ရှာဖွေ၍ ဖြေရှင်းရန် Developer Team ကို အကူအညီပေးသည့် တာဝန်ရှိသူတစ်ဦး
+  Bug Tester များသည် Quality Assurance (QA) အဖွဲ့၏ အရေးပါသောအဖွဲ့ဝင်တစ်ဦးဖြစ်သည်။
+
+3. MIUI Stable Version
+----------------------
+   - စမ်းသပ်ပြီးသား Feature များဖြင့် အသုံးပြုသူအများစုအတွက် ရည်ရွယ်ထားတယ်၏
+   - Bug နည်းပြီး အလွန်တည်ငြိမ်သော ROM ဖြစ်
+   - Normal User / Standard Users တေအတွက် အကောင်းဆုံးဖြစ်တယ်
+
+4. Custom MIUI ROM
+------------------
+   - Custom ROM သည် Xiaomi မှ တရားဝင်ထုတ်ပေးသည့် MIUI ROM မဟုတ်ပါ
+   - User တေကို ပိုမိုအဆင်ပြေအောင် Customize လုပ်ထားတာ
+   - Themes, Icons, Fonts စသည့် UI (User Interface) များကို ပြောင်းလဲပြီး စိတ်ကြိုက်ပြင်ဆင်နိုင်သည်
+   - Over-The-Air (OTA) Update လုပ်နိုင်ပါသည်
+   - Stability မရှိခြင်း - Custom ROM များသည် Stable Version မဟုတ်ပဲ Testing Version တွင်ပါဝင်သည့်အတွက် Bug များလည်းဖြစ်ပေါ်လာ
+   - Official Updates မရရှိခြင်း - ROM ကို Manually Update လုပ်ရပါမည်
+   - Security Risks
+   - ကလိချင်တဲ့ / စမ်းချင်တဲ့ - သူတေအတွက်
+EU ROM  ->  Install  ->  Bootloader Unlock
+EU ROM ကို ဘယ်ချိန်မှာသုံးသုံးရမလဲ ?
+china - only ဘဲ့ထွက်တဲ့ အလုံးတေမျိုး - global အနေနဲသုံးချင်ရင် - EU ROM ကို တင်ကြတယ်
+
+5. Engineering ROM
+------------------
+   - Firmware တင်လိုက်လို့ပြန်ကောင်းမလာတော့တဲ့ဖုန်းတေ
+   - IMEI တေမပါလာလျှင် 
+   - Partition တေပြန်ပိုင်းလိမ့်မယ်
+
+
+
+
+
+MIUI Update Types
+=================
+
+1. OTA Updates
+--------------
+   - Online Update လုပ်တာ
+   - Stable ROM အတွက်ပုံမှန် Update များရရှိနိုင်တယ်
+
+2. Manual Updates
+-----------------
+   - Recovery ROM သို့မဟုတ် Fastboot ROM ကို အသုံးပြုပြီးတော့ Update လုပ်တာ
+
+
+
+
+
+Region ROM
+==========
+
+
+
+
+
+
+
+
 
 
 
