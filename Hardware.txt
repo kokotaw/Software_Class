@@ -7,85 +7,87 @@ D    -   Diode
 ZD   -   Zener Diode
 LED  -   Light Emitting Diode
 OLED  -   Organic Light Emitting Diode
-AMOLED   -           Active Matrix Organic Light 
-                               Emitting  Diode
-L               -            Coil/Inductor
-LB             -            Ferrite Bead Coil
-Q              -             Transistor
-SOT          -            Small Outline Transistor
-FET           -            Field Effect Transistor
-MOSFET   -           Metal Oxite Semiconductor Field
-                               Effect Transistor
-BJT           -            Bipolar Junction Transistor
-UJT           -            Unipolar Junction Transistor
-VBAT         -            Battery +
-VPH           -            Battery +
-VPROC      -            Processor Voltage
-VCORE      -            Chip Digital Core Voltage
-ROM         -             Read Only Memory
-RAM          -            Random Access Memory
-SRAM         -           Static Random Access Memory
-SDRAM      -           Synchronous Dynamic Random
-                                Access Memory
-VREG         -           Regulator Voltage
-VREGS       -           Switching Regulator Voltage
-VREGL        -          Linear Regulator Voltage
-I/O              -            Input/Output
-LDO            -           Low-Dropout
-DAC            -           Digital To Analog Converter
-ADC            -           Analog To Digital Converter
-SMPS          -           Switch Mode Power Supply
-MIC              -          Microphone
-SPK              -          Speaker
-HS                -          Ear Speaker
-VIBR             -          Vibrator
-CAM             -          Camera
-USB              -          Universal Service Bus
-DP                -           Data +
-DM               -           Data -
-TP                -            Test Point
-VBUS           -          Charging Power Input
-VCHG           -          Charging Volt
-VCDT            -         Charging Detect Volt
-CHR_LDO    -         Charging Linear Power Supply
-ISENSE         -       Charging Current Detection Input
-INT              -        Interrupt
-GND          -        Ground/0V Supply
-NC             -      Not Connect/No Use
-TCXO         -   Temperature Compensated Oscillator
-SDA            -       Serial Data
-SCL             -         Serial Clock
-RST             -           Reset
-SDIO            -          Serial Data Input/Output
-WIFI             -            Wireless Fidelity
-BT               -             Bluetooth
-WLAN         -             Wireless Local Area Network
-DDR          -               Double Data Rate
-LPDDR     -               Low Power Double Data Rate
-IC             -                Integrated Circuit
-EMMC     -                Embedded Multimedia Card
-PMU         -               Power Management Unit
-CPU          -              Central Proessing Unit
-GPU          -              Graphics Processing Unit
-GPS          -               Global Position System
-SMD          -              Surface Mount Devices
-DIP            -               Dual Inline Package
-LCD           -               Liquid Crystal Display
-PA              -               Power Amplifier
-RF              -               Radio Frequency
-AF              -               Audio Frequency
-TX              -              Transmit
-RX              -               Receive
-ANT           -                Antenna
-BB              -               Baseband
-SAW          -                Surface Acoustic Wave
-MODEM     -               Modulation+Demodulation
-EMI            -                Electromagnetic Interference
-ESD           -                Electrostatic Discharge
-PCB           -                Printed Circuit Board
-BSI             -               Battery Status Indicator
-CMOS       -               Complementary Metal
-                               Oxide Semiconductor
+AMOLED  -   Active Matrix Organic Light Emitting  Diode
+L    -   Coil/Inductor
+LB   -   Ferrite Bead Coil
+Q    -   Transistor
+SOT  -   Small Outline Transistor
+FET  -   Field Effect Transistor
+MOSFET  -   Metal Oxite Semiconductor Field Effect Transistor
+BJT  -   Bipolar Junction Transistor
+UJT  -   Unipolar Junction Transistor
+
+
+VBAT   -   Battery +
+VPH    -   Battery +
+VPROC  -   Processor Voltage
+VCORE  -   Chip Digital Core Voltage
+
+ROM    -   Read Only Memory
+RAM    -   Random Access Memory
+SRAM   -   Static Random Access Memory
+SDRAM  -   Synchronous Dynamic Random Access Memory
+
+VREG   -   Regulator Voltage
+VREGS  -   Switching Regulator Voltage
+VREGL  -   Linear Regulator Voltage
+
+I/O   -   Input/Output
+LDO   -   Low-Dropout
+DAC   -   Digital To Analog Converter
+ADC   -   Analog To Digital Converter
+SMPS  -   Switch Mode Power Supply
+
+MIC   -   Microphone
+SPK   -   Speaker
+HS    -   Ear Speaker
+VIBR  -   Vibrator
+CAM   -   Camera
+USB   -   Universal Service Bus
+DP    -   Data +
+DM    -   Data -
+TP    -   Test Point
+VBUS  -   Charging Power Input
+VCHG  -   Charging Volt
+VCDT  -   Charging Detect Volt
+CHR_LDO - Charging Linear Power Supply
+ISENSE  - Charging Current Detection Input
+INT   -   Interrupt
+GND   -   Ground/0V Supply
+NC    -   Not Connect/No Use
+TCXO  -   Temperature Compensated Oscillator
+SDA   -   Serial Data
+SCL   -   Serial Clock
+RST   -   Reset
+SDIO  -   Serial Data Input/Output
+WIFI  -   Wireless Fidelity
+BT    -   Bluetooth
+WLAN  -   Wireless Local Area Network
+DDR   -   Double Data Rate
+LPDDR -   Low Power Double Data Rate
+IC    -   Integrated Circuit
+EMMC  -   Embedded Multimedia Card
+PMU   -   Power Management Unit
+CPU   -   Central Proessing Unit
+GPU   -   Graphics Processing Unit
+GPS   -   Global Position System
+SMD   -   Surface Mount Devices
+DIP   -   Dual Inline Package
+LCD   -   Liquid Crystal Display
+PA    -   Power Amplifier
+RF    -   Radio Frequency
+AF    -   Audio Frequency
+TX    -   Transmit
+RX    -   Receive
+ANT   -   Antenna
+BB    -   Baseband
+SAW   -   Surface Acoustic Wave
+MODEM  -  Modulation+Demodulation
+EMI   -   Electromagnetic Interference
+ESD   -   Electrostatic Discharge
+PCB   -   Printed Circuit Board
+BSI   -   Battery Status Indicator
+CMOS  -   Complementary Metal Oxide Semiconductor
 MIPI          -       Mobile Industry Processor Interface
 DSI            -        Display Serial Interface
 CSI            -         Camera Serial Interface
