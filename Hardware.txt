@@ -1,12 +1,12 @@
-AC           -             Alternative Current
-DC           -             Direct Current
-C              -            Capacitor
-R              -             Resistor
-LDR         -             Light Dependent Resistor
-D              -             Diode
-ZD           -             Zener Diode
-LED          -            Light Emitting Diode
-OLED        -           Organic Light Emitting Diode
+AC   -   Alternative Current
+DC   -   Direct Current
+C    -   Capacitor
+R    -   Resistor
+LDR  -   Light Dependent Resistor
+D    -   Diode
+ZD   -   Zener Diode
+LED  -   Light Emitting Diode
+OLED  -   Organic Light Emitting Diode
 AMOLED   -           Active Matrix Organic Light 
                                Emitting  Diode
 L               -            Coil/Inductor
