@@ -161,6 +161,24 @@ Sideload mode ကို အဓိကအားဖြင့် xiaomi ဖုန်
 
 
 
+Firmware Install 
+----------------
+
+step: fastboot mode ထဲအရင်ဝင်ရမယ်
+
+1
+bat file နဲ့တင်တာ
+bat command လုပ်ချင်လျှင် double columm - ::
+
+2
+mi flash pro
+clean all အမှန်ခြစ်
+
+3
+QFL
+မလိုတဲ့ img တေကို ဖြုတ်ပီးတင်လို့ရတယ်
+
+
 
 
 
