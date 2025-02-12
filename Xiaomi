@@ -186,6 +186,46 @@ QFL
 
 
 
+step:1 => emmcdl download (URL:)
+step:2 => firehose file download
+firehose finder နဲ့ရှာလို့လည်းရတယ် 
+
+right click run as administrator (  .reg)
+
+fastboot oem edl
+emmcdl -l
+emmcdl -p COM5 -info
+emmcdl -p COM5 -f <firehose_name_ရှိတဲ့ location.mbn>
+emmcdl -p COM5 -f pro--.mbn -info
+emmcdl -p COM5 -f pro--.mbn -gpt  [gpt=> get partition list]
+
+-d နဲ့  -o တွဲသုံးပြီး dump file ကို  backup ထုတ်မယ်
+emmcdl -p COM5 -f pro--.mbn -d recovery -o recovery.img
+
+-b <partition_name> <file_name>  => flash partition
+emmcdl -p COM5 -f pro_firehost_.mbn -b persist persist.img
+
+-e  [partition ထဲမှာရှိတဲ့ data တေဘဲ့ erase လုပ်တာ - partition မပျက်သွားဘူး]
+-e partition_name
+	frp => config
+	mi account => persist
+	pattern pass => userdata
+
+
+-x partition_name -SetActivePartition 0<0/1/2> [xml file တေကို flash တဲ့ချိန်မှာ x ကိုသုံးတယ် ]
+emmcdl -p COM5 -f pro_firehost_.mbn -x rawprogram.xml -SetActivePartition 0
+rawprogram0.xml  / path0.xml
+
+
+
+firehose ?
+
+
+
+
+
+
+
 
 
 
