@@ -196,7 +196,6 @@ fastboot oem edl
 emmcdl -l
 emmcdl -p COM5 -info
 emmcdl -p COM5 -f <firehose_name_ရှိတဲ့ location.mbn>
-emmcdl -p COM5 -f pro--.mbn -info
 emmcdl -p COM5 -f pro--.mbn -gpt  [gpt=> get partition list]
 
 -d နဲ့  -o တွဲသုံးပြီး dump file ကို  backup ထုတ်မယ်
