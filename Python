@@ -1,2 +1,103 @@
+Python Download
+---------------
+1/ MS Store
+2/ cmd - Python
+
+
 #pip3 install -r requirements.txt
 ပထမဦးဆုံး - requirement.txt -> file ထဲက library တေကို install လုပ်မယ်လို့ပြောတာ
+
+#pip3 install .
+အထဲမှာရှိတဲ့ pip တေကို install လုပ်
+
+mtk.py ကိုခေါ်သုံးချင်လျှင် - python ခံရမယ်
+test လုပ်မယ်
+#python mtk.py
+
+usbdk ကို  install လုပ်
+
+file တေကိုဝင်ပြင်ရဦးမယ်
+ဒီလိုပြင်မှ - bootloader unlock လုပ်တဲ့အချိန်တေမှာ - DM error တေမပေါ်တော့ဘူး
+mtkclient-main>mtkclient>Libary>Hardware> seccfg.py ကိုပြင်ရမယ်
+  ".critical_lock_state = 1"  ကို "0" ပြောင်းပေးရမယ်
+  ".critical_lock_state = 0"  -> 2ခုရှိတယ်
+    ဒါမှ DM error မတက်တော့မှာ
+
+Firmware တင်တဲ့အချိန်မှာ - (speed ကို) မြန်အောင်လုပ်ချင်လျှင် -> xflash_lib.py ကိုပြင်ရမယ်
+send_param ရဲ့အောက်မှာရှိတဲ့ ->  while -> main(length, 0x200) ကို  "0x2400" ကိုပြောင်းပေး
+
+
+
+----------------------------------------
+
+BROM Mode ကိုဝင်မယ်
+
+#mtk
+
+1
+#mtk printgpt  ->  partition တေကိုကြည့်တာ / partition list တေကို print လုပ်တာ
+      ဖုန်းထဲမှာ ရှိတဲ့ partition တေဘဲ့ပေါ်တယ်  /  firmware ထဲက သိပ်မပါဘူး
+
+
+2
+#mtk payload  ->  Auth Bypass လုပ်တဲ့ချိန်မှာ သုံးတယ်
+
+
+3
+အထဲမှာရှိတဲ့ partiton list တေကိုဆွဲထုတ်မှာ / readback  /  dumping လုပ်တာ
+r => single readback
+--------------------
+#mtk r <partition_name> <output_file_name>
+#mtk r persist persist.img
+#mtk r recovery recovery.img
+
+multi readback
+--------------
+#mtk r presist,recovery presist.img,recovery.img
+#mtk r nvdata,nvcfg,nvram nvdata.img,nvcfg.img,nvram.img
+
+
+4
+Write
+=====
+(single-flash)
+#mtk w <partition_name> <output_file_name>
+#mtk w persist persist.img
+
+(multi-flash)
+#mtk w presist,recovery presist.img,recovery.img
+
+
+5
+Erase
+=====
+#mtk e <partition_name>
+#mtk e persist    (Mi account bypass - wifi ချိတ်လို့မရဘူး)
+wifi ချိတ်လျှင် - Mi account lock ပြန်ကျသွားလိမ့်မယ်
+
+#mtk e userdata    (phone ကို  factory reset လုပ်တာ)
+#mtk e frp      (frp အပီးကျော်တာ)
+
+
+
+6
+Script.txt file ကို run မယ်
+#mtk script <file.txt>
+
+file.txt
+----------------------
+|  printgpt          |
+|  r boot boot.img   |
+|  reset             |
+----------------------
+reset က BROM Mode ကနေပြန်ထွက်တာ
+
+
+
+
+
+
+
+
+
+
