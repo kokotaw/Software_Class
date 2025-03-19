@@ -55,6 +55,7 @@ multi readback
 --------------
 #mtk r presist,recovery presist.img,recovery.img
 #mtk r nvdata,nvcfg,nvram nvdata.img,nvcfg.img,nvram.img
+#mtk r persist,rec Backup/persist.img
 
 
 4
