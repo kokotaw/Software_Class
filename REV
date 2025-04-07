@@ -1,0 +1,246 @@
+
+
+
+China => Global
+MTK ? / Qualcomm ?
+unlock ဆိုအဆင်ပြေတယ်
+lock =>  ---
+-------
+Bootloader Global Rom
+cust.img  =>  cust file နဲ့တင်မလား
+
+
+
+
+
+Model
+=====
+#adb shell getprop ro.product.model
+
+Voldown + power + cable
+
+#fastboot getvar product
+
+
+
+MIUI Version
+============
+#adb shell getprop ro.build.version.incremental
+
+#adb --version
+#fastboot --version
+
+#miadb getversion
+
+
+android Version
+---------------
+#miadb getcodebase
+#adb shell getprop ro.build.version.release
+
+
+
+
+
+Lock ? Unlock
+=============
+#adb reboot bootloader
+
+#fastboot getvar unlocked
+                <OR>
+#fastboot oem device-info
+
+#fastboot getvar hw-revision
+
+
+
+
+Fastboot Mode : Firmware Install
+================================
+
+1
+bat file နဲ့တင်တာ
+bat command လုပ်ချင်လျှင် double columm - ::
+
+2
+mi flash pro
+clean all အမှန်ခြစ်
+
+3
+QFL
+မလိုတဲ့ img တေကို ဖြုတ်ပီးတင်လို့ရတယ်
+
+
+
+
+Emergency Mode : Fastboot Firmware
+==================================
+
+Qualcomm <OR> MTK ?
+------------------- 
+
+Qualcomm : EDL / 9008 / QDLoader
+-------------------------------
+lock / unlock
+
+firehost.mbn => Security bypass
+rawporgram0.xml => partition တေကို mapping လုပ်ပီး flash
+path0.xml => partition တေကို check
+
+EMMCDL =>
+fastboot oem edl
+emmcdl -l
+emmcdl -p COM5 -info
+emmcdl -p COM5 -f pro--.mbn -gpt  [gpt=> get partition list]
+emmcdl -p COM5 -f pro--.mbn -d recovery -o recovery.img
+emmcdl -p COM5 -f pro_firehost_.mbn -b persist persist.img
+-e partition_name
+emmcdl -p COM5 -f pro_firehost_.mbn -x rawprogram.xml SetActivePartition 0
+
+
+For Mi Account bypass
+---------------------
+persist partition ကို  export ထုတ်
+fdsd ကို   =>  rename
+Qualcomm : modern partition  =>  cardapp MDT => ABC လို့  rename
+MTK : system partition => find.api => fadc.api လို့  rename
+#mtk da vbmeta 3
+#mtk w system system.img
+
+
+
+MTK : BROM mode
+---------------
+DA.bin  =>  firehost
+scatter => rawprogram0
+preloader => path0
+
+scatter (အနိမ့်)  /  flash.xml  (အမြင့်)
+SP Flash V5   /   V6
+
+#mtk payload  =>  
+
+
+python
+------
+#mtk printgpt  ->  partition တေကိုကြည့်တာ
+#mtk payload  ->  Auth Bypass
+
+#mtk r persist persist.img
+#mtk r presist,recovery presist.img,recovery.img
+nvcfg / nvdata / nvram / md1img / proinfo / seccfg / preloader
+
+
+
+#mtk w persist persist.img => flash
+
+#mtk e userdata 
+
+
+
+
+SAMSUNG
+=======
+Recovery
+Download
+
+
+Samsung Firmware
+================
+
+1. FRP Lock  /  Account Lock
+2. Firmware 
+
+
+
+
+
+Huawei
+======
+
+fuse_state
+max—download—size
+cpuid
+variant
+logical—block—size
+erase—block—size
+hw—revision
+battery—soc—ok
+battery—voltage
+warranty
+unlocked
+secure
+version—baseband
+version—bootloader
+kernel
+version
+
+
+1. Dload Firmware ( dload Folder + Update . app (or) Update. zip
+2. SD Card (8GB) => format - fat32
+3. Copy Dload Folder + Update . app + Update . zip
+
+
+firmware မရှာခင် - Built number အရင်စစ်ရမယ်
+fastboot mode ဝင်
+Vol down + power
+Vol down -ကြိုးထိုး
+recovery => reboot bootloader
+#fastboot oem get-psid  => serial no.
+#fastboot oem get-product-model  =>  model စစ်တဲ့
+#fastboot oem get-built-number  =>  build number
+#fastboot oem get-bootinfo    =>  bootloader lock ? unlock ?
+
+built no. နဲ့  firmware ရှာရမယ်
+tag_a100c92b167 dload firmware
+dload firmware ဘဲ့ရှာမယ်
+
+extract ဖြေထားတဲ့ folder ထဲမှ - dload folder ကို  ဖုန်းရဲ့  SD card ထဲကိုထည့်မယ်
+
+normal mode ကိုပြန်သွားမယ်
+#fastboot reboot
+
+
+battery က 10% လောက်ဆိုပေးမတင်ဘူး
+
+vol up + down + power ပီးရင် power ကိုလွတ် vol up + down
+
+mtk ဖြစ်တဲ့ အတွက်ကြောင့်  scatter firmware ကိုရှာပြီးတော့  - SP Flash tool နဲ့တင်လို့လည်းရတယ်
+Qualcomm ဖြစ်လျှင်  -  9008 ကနေတင်
+Hisilicon - COM port ကနေတင်လို့ရတယ် 
+
+
+
+
+
+
+APPLE Service
+-------------
+
+Passcode Lock
+ICloud Lock
+Firmware ကျတာ  => Itune ပုံလေးပေါ်ပီးတော့လာတယ်
+MDM Lock
+
+Service Tools
+-------------
+3U tool  =>  3u.com
+
+
+
+iPhone မှာ  Mode ၂မျိုးဘဲ့ ရှိတယ်
+--------------------------
+Recovery Mode
+DFU mode
+
+
+
+
+
+
+
+adb shell getprop ro.csc.country_code 
+adb shell getprop ro.csc.countryiso_code
+adb shell getprop ro.build.PDA
+adb shell getprop ro.csc.omcnw_code
+adb shell getprop ro.csc.sales_code 
